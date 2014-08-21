@@ -26,8 +26,6 @@ namespace ORMTodos
             
         }
  
-       
- 
         public IEnumerable<T> Get(Expression<Func<T, bool>> predicate)
         {
             return _unitOfWork.Query<T>().Where(predicate);

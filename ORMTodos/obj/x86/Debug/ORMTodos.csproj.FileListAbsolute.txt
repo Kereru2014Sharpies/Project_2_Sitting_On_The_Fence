@@ -1,1 +1,11 @@
 C:\Code\DevAcademy\great-spotted-kiwis-2014\orm-todos-part-1-challenge\source\CS\ORMTodos\bin\Debug\ORMTodos.exe.config
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\ORMTodos.exe.config
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.exe
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.pdb
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\ORMTodos.exe
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\ORMTodos.pdb
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.dll
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.Linq.dll
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.xml
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.Linq.xml
+C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.csprojResolveAssemblyReference.cache
