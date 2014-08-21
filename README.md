@@ -49,7 +49,7 @@ Parties
 
 TDD Questions:
 
-Has a question been retrieved
-Has a user response been saved
-Does a party get assigned to a user afterthought questions are answered.
-Have user answers been saved.
+- Has a question been retrieved
+- Has a user response been saved
+- Does a party get assigned to a user afterthought questions are answered.
+- Have user answers been saved.
