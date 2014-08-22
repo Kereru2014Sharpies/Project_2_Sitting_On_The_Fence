@@ -39,7 +39,7 @@ namespace ORMTodos
             int maxValue = choice.Max();
             int maxIndex = choice.ToList().IndexOf(maxValue);
 
-            return maxIndex;
+            return maxIndex + 1;
 
         }
     }
