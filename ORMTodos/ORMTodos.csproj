@@ -51,11 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddControler.cs" />
-    <Compile Include="AddModel.cs" />
-    <Compile Include="AddView.cs" />
+    <Compile Include="DispalyQuizView.cs" />
+    <Compile Include="DisplayQuizController.cs" />
     <Compile Include="FallBackControler.cs" />
-    <Compile Include="FallBackModel.cs" />
     <Compile Include="FallBackView.cs" />
     <Compile Include="HelpControler.cs" />
     <Compile Include="HelpModel.cs" />

@@ -16,8 +16,9 @@ namespace Demo
             IControler controler;
             switch (command)
             {
-                case "add":
-                    controler = new AddControler();
+                case "start":
+                case "s":
+                    controler = new DisplayQuizController();
                     break;
                 case "help" :
                 case "h":

@@ -12,6 +12,7 @@ namespace ORMTodos
             foreach (var topic in model.HelpTopics)
             {
                 Console.WriteLine("{0}", topic.Value);
+                Console.ReadKey();
             }
         }
     }
