@@ -12,7 +12,7 @@ namespace ORMTodos
 
         public FallBackModel()
         {
-            Message = "You need to add a command line argument. \nPass in the argument: Help for info on the available commands, \nOr Help <command argument> for info on that specific command argument.";
+            Message = "Type quizme to start the game.";
         }
     }
 }

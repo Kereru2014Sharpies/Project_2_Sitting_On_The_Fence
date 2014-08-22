@@ -5,28 +5,23 @@ using System.Text;
 
 namespace ORMTodos
 {
-    public class UserTotals
+    public class ResponseModel
     {
-        public int partyOne { get; set; }
-        public int partyTwo { get; set; }
-        public int partyThird { get; set; }
-        public int partyFour { get; set; }
-
         public void IncrementTotal(int userChoice)
         {
             switch (userChoice)
             {
                 case 1:
-                    partyOne++;
+                    StateHolder.partyOne++;
                     break;
                 case 2:
-                    partyTwo++;
+                    StateHolder.partyTwo++;
                     break;
                 case 3:
-                    partyThird++;
+                    StateHolder.partyThird++;
                     break;
                 case 4:
-                    partyFour++;
+                    StateHolder.partyFour++;
                     break;
                 default:
                     break;
@@ -35,7 +30,7 @@ namespace ORMTodos
 
         public int ReturnCurrentChoice()
         {
-            int[] choice = { partyOne, partyTwo, partyThird, partyFour };
+            int[] choice = { StateHolder.partyOne, StateHolder.partyTwo, StateHolder.partyThird, StateHolder.partyFour };
             int maxValue = choice.Max();
             int maxIndex = choice.ToList().IndexOf(maxValue);
 
