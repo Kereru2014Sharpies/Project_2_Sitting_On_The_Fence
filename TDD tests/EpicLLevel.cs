@@ -24,7 +24,7 @@ namespace TDD_tests
             //ActualId = Question.Find(int ExpectedId);
 
             //Assert
-            Assert.AreEqual(ExpectedId == ActualId);
+            Assert.AreEqual(ExpectedId , ActualId);
 
             Console.WriteLine(ExpectedId);
         }

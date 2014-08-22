@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="EpicLLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RouterUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ORMTodos\ORMTodos.csproj">
