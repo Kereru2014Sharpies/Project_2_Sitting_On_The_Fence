@@ -9,3 +9,13 @@ C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug
 C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.xml
 C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.Linq.xml
 C:\Users\user\Documents\Github\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.csprojResolveAssemblyReference.cache
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\ORMTodos.exe.config
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.exe
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.pdb
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\ORMTodos.exe
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\ORMTodos.pdb
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.dll
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.Linq.dll
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.xml
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\bin\Debug\Mindscape.LightSpeed.Linq.xml
+C:\dev\EDA\Phase_1\week_3\Project_2_Sitting_On_The_Fence\ORMTodos\obj\x86\Debug\ORMTodos.csprojResolveAssemblyReference.cache

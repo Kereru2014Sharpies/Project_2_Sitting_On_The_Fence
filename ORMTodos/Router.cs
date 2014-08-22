@@ -24,6 +24,9 @@ namespace Demo
                 case "-h":
                     controler = new HelpControler();
                     break;
+                case "save":
+                    controler = new AddToListController();
+                    break;
                 default :
                     controler = new FallBackControler();
                     break;
