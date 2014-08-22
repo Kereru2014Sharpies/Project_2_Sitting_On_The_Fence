@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.1.0.0" name="TODOs" targetNamespace="ORMTodos" databaseProvider="SqlServer2008" connectionString="Data Source=.\sqlexpress;Initial Catalog=SittingOnTheFence;Integrated Security=True;Pooling=False" pluralizedInDatabase="false" mediumTrustCompatibility="false" xmlns="http://namespaces.mindscape.co.nz/lightspeed">
+  <entities>
+    <entity name="Answer" identityType="Int32" cacheExpiry="0" tableName="Answers">
+      <entityProperties>
+        <entityProperty name="AnswerField" columnName="Answer" privateSetter="false">
+          <validations>
+            <presenceValidation />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+    </entity>
+    <entity name="Party" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="PartyName" privateSetter="false">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="50" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="aa2dd84f-16f6-4dd2-87df-bb516e3791c6" collectionName="Answers" backreferenceName="Party" isNullable="false">
+          <entityMoniker name="/TODOs/Answer" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+    <entity name="Question" identityType="Int32" cacheExpiry="0" tableName="Questions">
+      <entityProperties>
+        <entityProperty name="QuestionField" columnName="Question" privateSetter="false">
+          <validations>
+            <presenceValidation />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="4bfe174b-ede5-4267-8572-a3301318653a" collectionName="Answers" backreferenceName="Question" isNullable="false">
+          <entityMoniker name="/TODOs/Answer" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+  </entities>
+</model>
