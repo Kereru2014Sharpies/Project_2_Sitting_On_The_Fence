@@ -11,6 +11,20 @@ namespace Demo
     {
         public void Route(string[] args)
         {
+            RunCommandCycle(args);
+        }
+
+        protected void RunCommandCycle(string[] args)
+        {
+            String command = args.Length != 0 ? args[0].ToLowerInvariant() : String.Empty;
+
+            IControler controler = ControlerFactory(command);
+
+            controler.Process(command, args.Skip(1));
+        }
+
+        public void Route(string[] args)
+        {
             String command = args.Length != 0 ? args[0].ToLowerInvariant() : String.Empty;
 
             IControler controler;
