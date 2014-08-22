@@ -70,6 +70,7 @@
     </Compile>
     <Compile Include="QuizView.cs" />
     <Compile Include="ResponseControl.cs" />
+    <Compile Include="RetreaveQuestion.cs" />
     <Compile Include="Router.cs" />
     <Compile Include="StateHolder.cs" />
     <Compile Include="TODOs.cs">

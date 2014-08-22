@@ -12,7 +12,7 @@ namespace ORMTodos
 
         public FallBackModel()
         {
-            Message = "Type quizme to start the game.";
+            Message = "Type quizme to start the game. Type which to show the part you should vote for";
         }
     }
 }
