@@ -9,9 +9,31 @@ namespace Demo
 {
     class Router
     {
-        public void Route(string[] args)
+        public void RunOneRoute(string[] args)
         {
             RunCommandCycle(args);
+        }
+
+        public void Route(string[] initalArgs)
+        {
+
+            IControler controler = ControlerFactory("welcome");
+            controler.Process("welcome", Enumerable.Repeat(String.Empty,0));
+
+            while (true)
+            {
+                var args = Console.ReadLine() ?? String.Empty;
+                var cleanedUpArgs = args.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                Console.Clear();
+
+                if (args.Equals("exit",StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
+
+                RunCommandCycle(cleanedUpArgs);
+            }
+           
         }
 
         protected void RunCommandCycle(string[] args)
