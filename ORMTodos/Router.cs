@@ -9,27 +9,60 @@ namespace Demo
 {
     class Router
     {
-        public void Route(string[] args)
+        public void RunOneRoute(string[] args)
+        {
+            RunCommandCycle(args);
+        }
+
+        public void Route(string[] initalArgs)
+        {
+
+            IControler controler = ControlerFactory("welcome");
+            controler.Process("welcome", Enumerable.Repeat(String.Empty,0));
+
+            while (true)
+            {
+                var args = Console.ReadLine() ?? String.Empty;
+                var cleanedUpArgs = args.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                Console.Clear();
+
+                if (args.Equals("exit",StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
+
+                RunCommandCycle(cleanedUpArgs);
+            }
+           
+        }
+
+        protected void RunCommandCycle(string[] args)
         {
             String command = args.Length != 0 ? args[0].ToLowerInvariant() : String.Empty;
 
+            IControler controler = ControlerFactory(command);
+
+            controler.Process(command, args.Skip(1));
+        }
+
+        protected IControler ControlerFactory(string command)
+        {
             IControler controler;
             switch (command)
             {
                 case "add":
                     controler = new AddControler();
                     break;
-                case "help" :
+                case "help":
                 case "h":
                 case "-h":
                     controler = new HelpControler();
                     break;
-                default :
+                default:
                     controler = new FallBackControler();
                     break;
             }
-
-            controler.Process(command,args.Skip(1));
+            return controler;
         }
     }
 }

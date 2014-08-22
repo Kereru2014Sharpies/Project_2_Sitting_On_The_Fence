@@ -24,7 +24,7 @@ namespace TDD_tests
             ActualId = Question.Find(ExpectedId = 1);
 
             //Assert
-            Assert.AreEqual(ExpectedId == ActualId);
+            Assert.AreEqual(ExpectedId , ActualId);
 
             Console.WriteLine(ExpectedId);
         }
@@ -44,6 +44,68 @@ namespace TDD_tests
             //EndCount = DevDatabase.Count();
 
             //Assert
+            Assert.IsTrue(false);
+
+            //Console.WriteLine(ExpectedId);
+        }
+
+        [TestMethod]
+        public void QusstionsAreAnswered()
+        {
+            //Arrange
+
+            //int StartCount = DevDatabase.Count();
+            //int EndCount = 0;
+
+
+            //Act
+            //add to databse
+
+            //EndCount = DevDatabase.Count();
+
+            //Assert
+            Assert.IsTrue(false);
+
+            //Console.WriteLine(ExpectedId);
+
+        }
+
+        [TestMethod]
+        public void UserAnswersSaved()
+        {
+            //Arrange
+
+            //int StartCount = DevDatabase.Count();
+            //int EndCount = 0;
+
+
+            //Act
+            //add to databse
+
+            //EndCount = DevDatabase.Count();
+
+            //Assert
+            Assert.IsTrue(false);
+
+            //Console.WriteLine(ExpectedId);
+        }
+
+        [TestMethod]
+        public void DisplayUserIdealParty()
+        {
+            //Arrange
+
+            //int StartCount = DevDatabase.Count();
+            //int EndCount = 0;
+
+
+            //Act
+            //add to databse
+
+            //EndCount = DevDatabase.Count();
+
+            //Assert
+            Assert.IsTrue(false);
 
             //Console.WriteLine(ExpectedId);
         }
