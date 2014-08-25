@@ -13,12 +13,7 @@ namespace ORMTodos
         static void Main(string[] args)
         {
             Router router = new Router();
-            router.Route(args);
-
-
-
-           
-            
+            router.Route(args);      
         }
         
 

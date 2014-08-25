@@ -17,8 +17,8 @@ namespace Demo
         public void Route(string[] initalArgs)
         {
 
-            IControler controler = ControlerFactory("welcome");
-            controler.Process("welcome", Enumerable.Repeat(String.Empty,0));
+            IControler controler = ControlerFactory("quizme");
+            controler.Process("quizme", Enumerable.Repeat(String.Empty, 0));
 
             while (true)
             {
@@ -26,14 +26,14 @@ namespace Demo
                 var cleanedUpArgs = args.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 Console.Clear();
 
-                if (args.Equals("exit",StringComparison.OrdinalIgnoreCase))
+                if (args.Equals("exit", StringComparison.OrdinalIgnoreCase))
                 {
                     break;
                 }
 
                 RunCommandCycle(cleanedUpArgs);
             }
-           
+
         }
 
         protected void RunCommandCycle(string[] args)
@@ -50,13 +50,22 @@ namespace Demo
             IControler controler;
             switch (command)
             {
-                case "add":
-                    controler = new AddControler();
+                case "quizme":
+                    controler = new QuizController();
                     break;
                 case "help":
                 case "h":
                 case "-h":
                     controler = new HelpControler();
+                    break;
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                    controler = new ResponseControl();
+                    break;
+                case "which":
+                    controler = new PartyControl();
                     break;
                 default:
                     controler = new FallBackControler();
